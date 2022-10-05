@@ -1,0 +1,110 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+#sedans,
+#suvs,
+#luxury {
+    padding: 2%;
+    width: 250px;
+}
+
+.heading {
+    font-family: "Big Shoulders Display";
+    font-family: 700;
+    font-size: 30px;
+    color: hsl(0, 0%, 95%);
+    padding: 7% 0;
+}
+
+
+#sedans {
+    border-top-left-radius: 2%;
+    border-bottom-left-radius: 2%;
+}
+
+#luxury {
+    border-top-right-radius: 2%;
+    border-bottom-right-radius: 2%;
+}
+
+.car-text {
+    line-height: 1.4;
+    font-family: "Lexend Deca";
+    font-weight: 400;
+    font-size: 15px;
+    padding-bottom: 30%;
+}
+
+input[type="submit"] {
+    padding: 6% 12%;
+    border: 2px solid hsla(0, 0%, 100%, 0.75);
+    border-radius: 45px;
+    font-weight: 400;
+    margin-bottom: 7%;
+}
+
+input[type="submit"]:hover {
+    background-color: transparent;
+    color: unset !important;
+    border: 2px solid hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+
+@media (max-width:2560px) {
+    #suvs .car-text {
+        width: 95%;
+    }
+}
+
+@media (max-width:768px) {
+    #sedans,
+    #suvs,
+    #luxury {
+    padding: 4%;
+    }
+}
+
+@media (max-width:425px) {
+      #container {
+        flex-direction: column;
+        height: unset;
+        margin: 15% 0;
+    }
+
+    input[type="submit"]{
+        margin-bottom: 4%;
+    }
+
+    #sedans {
+        border-top-left-radius: 2%;
+        border-top-right-radius: 2%;
+        border-bottom-left-radius: unset;
+    }
+
+    #luxury {
+        border-top-right-radius: unset;
+        border-bottom-right-radius: 2%;
+        border-bottom-left-radius: 2%;
+    }
+
+    #sedans,
+    #suvs,
+    #luxury {
+        padding: 10%;
+    }
+}
+
