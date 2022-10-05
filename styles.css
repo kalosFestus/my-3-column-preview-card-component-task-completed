@@ -15,9 +15,9 @@
     width: 100%;
 }
 
-#sedans,
-#suvs,
-#luxury {
+.sedans,
+.suvs,
+.luxury {
     padding: 2%;
     width: 250px;
 }
@@ -31,12 +31,12 @@
 }
 
 
-#sedans {
+.sedans {
     border-top-left-radius: 2%;
     border-bottom-left-radius: 2%;
 }
 
-#luxury {
+.luxury {
     border-top-right-radius: 2%;
     border-bottom-right-radius: 2%;
 }
@@ -65,15 +65,15 @@ input[type="submit"]:hover {
 }
 
 @media (max-width:2560px) {
-    #suvs .car-text {
+    .suvs .car-text {
         width: 95%;
     }
 }
 
 @media (max-width:768px) {
-    #sedans,
-    #suvs,
-    #luxury {
+    .sedans,
+    .suvs,
+    .luxury {
     padding: 4%;
     }
 }
@@ -89,21 +89,21 @@ input[type="submit"]:hover {
         margin-bottom: 4%;
     }
 
-    #sedans {
+    .sedans {
         border-top-left-radius: 2%;
         border-top-right-radius: 2%;
         border-bottom-left-radius: unset;
     }
 
-    #luxury {
+    .luxury {
         border-top-right-radius: unset;
         border-bottom-right-radius: 2%;
         border-bottom-left-radius: 2%;
     }
 
-    #sedans,
-    #suvs,
-    #luxury {
+    .sedans,
+    .suvs,
+    .luxury {
         padding: 10%;
     }
 }
