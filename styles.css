@@ -7,7 +7,7 @@
     color: hsla(0, 0%, 100%, 0.75);
 }
 
-#container {
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,7 +79,7 @@ input[type="submit"]:hover {
 }
 
 @media (max-width:425px) {
-      #container {
+      .container {
         flex-direction: column;
         height: unset;
         margin: 15% 0;
